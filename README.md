@@ -6,9 +6,9 @@ A web-app backed by GCS and a VM w/ Git Creds to manage (host, tag, verify, comp
 
 A bucket on GCS with version control enabled stores:
 
-- ABIs
-- Snapshots of git repos at specific SHAs
-- Contract Deployments
+- ABIs + tag metadata
+- Snapshots of git repos at specific SHAs + tag metadata
+- Contract Deployment Metadata + tag metadata
 
 A web-tool & CLI then lets you link Contract Deployments to ABIs, optionally automatically verifying from deterministic builds.
 
